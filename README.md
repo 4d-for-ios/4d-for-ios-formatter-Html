@@ -1,4 +1,4 @@
-<p align="center"><img src="https://developer.4d.com/4d-for-ios/docs/assets/en/template-formatters/formatter-html.png" alt=“HTML” height="auto" width="200"></p>
+<p align="center"><img src="https://github.com/4d-for-ios/4d-for-ios-formatter-Html/blob/master/formatter.png" alt=“HTML” height="auto" width="200"></p>
 
 ## Mail
 
