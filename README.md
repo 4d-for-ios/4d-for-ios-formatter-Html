@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/4d-for-ios/4d-for-ios-formatter-Html/blob/master/formatter.png" alt=“HTML” height="auto" width="200"></p>
 
-## Mail
+## Html
 
 * **Format:** Text ⟶ html
 * **Function:** add style
