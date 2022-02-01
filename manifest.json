@@ -1,5 +1,6 @@
 {
 	"name": "htmlText",
 	"binding": "htmlText",
-	"type" : "text"
+	"type" : "text",
+	"target" : ["ios", "android"]
 }
