@@ -17,11 +17,16 @@ jobs:
           cat manifest.json | jsonlint
       - name: ⚙️ Install swiftlint
         run: |
-          brew install swiftlint
+          if [ -z "$(which swiftlint)" ]; then
+            brew install swiftlint
+          else
+            swiftlint version  
+          fi
         env:
           HOMEBREW_NO_INSTALL_CLEANUP: 1
-      - name: 🧹 Code Lint
+      - name: 🧹 Swift Code Lint
         run: |
+          cd ios
           if [ ! -f ".swiftlint.yml" ]; then
             curl -L https://raw.githubusercontent.com/4d-for-ios/check-workflow/master/form/quality/.swiftlint.yml --output .swiftlint.yml
           fi
@@ -38,4 +43,5 @@ jobs:
             fetch-depth: 1
         - name: 👷 Swift build
           run: |
+            cd ios
             curl -fsSL $RELEASE_REPO/form/scripts/swift_build.sh | bash -s
