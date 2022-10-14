@@ -14,6 +14,6 @@ fun htmlText(view: TextView, htmlText: String?) {
     webView.setPadding(view.paddingStart, view.paddingTop, view.paddingEnd, view.paddingBottom)
     webView.layoutParams = view.layoutParams
     webView.loadDataWithBaseURL(null, htmlText, "text/html", "utf-8", null)
-    (view.parent as ViewGroup?)?.addView(webView)
+    (view.parent as? ViewGroup)?.addView(webView)
     view.visibility = View.GONE
 }
